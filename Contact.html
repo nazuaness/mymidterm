@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact</title>
+	<link rel="stylesheet" type="text/css" href="css/maincss.css">
+  <link rel="stylesheet" type="text/css" href="css/stylesforcontacts.css"> <!--CSS of mine form-->
+  <link rel="stylesheet" type="text/css" href="css/additionalForContacts.css"> <!--Plugin which I downloaded from Internet to form-->
+	<link rel="icon" href="plane.ico">
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+</head>
+<body >
+<div id="main">
+  <!--Right part of mine form-->
+  <div class="container-contact100" >
+    <div class="wrap-contact100" style="background-color: white;">
+      <form class="contact100-form validate-form" method="POST">
+        <span class="contact100-form-title">
+          Send your suggestions
+        </span>
+        <label class="label-input100" for="first-name">Tell us your name *</label>
+        <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Type first name">
+          <input id="first-name" class="input100" type="text" name="name" placeholder="First name" required>
+          <span class="focus-input100"></span>
+        </div>
+        <div class="wrap-input100 rs2-wrap-input100 validate-input" data-validate="Type last name" required>
+          <input id="last-name" class="input100" type="text" name="lname" placeholder="Last name">
+          <span class="focus-input100"></span>
+        </div>
+        <label class="label-input100" for="email">Enter your email *</label>
+        <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz" required>
+          <input id="email" class="input100" type="text" name="email" placeholder="Eg. example@email.com">
+          <span class="focus-input100"></span>
+        </div>
+
+        <label class="label-input100" for="phone">Enter phone number</label>
+        <div class="wrap-input100">
+          <input id="phone" class="input100" type="text" name="phone" placeholder="Eg. +7 (777) 000-00-00" required="">
+          <span class="focus-input100"></span>
+        </div>
+        <label class="label-input100" for="message">Message *</label>
+        <div class="wrap-input100 validate-input" data-validate = "Message is required">
+          <textarea id="message" class="input100" name="message" placeholder="Write us a message" required=""></textarea>
+          <span class="focus-input100"></span>
+        </div>
+        <div class="container-contact100-form-btn">
+          <button class="contact100-form-btn" onclick="checker()">
+            Send Message
+          </button>
+        </div>
+
+      </form>
+<!--Left part of form-->
+      <div class="contact100-more flex-col-c-m" style="background-image: url('css/images/formbg.jpg');text-align: left;">
+        <div class="flex-w size1 p-b-47">
+          <div class="flex-col size2">
+            <span class="txt1 p-b-20" style="color: white">
+              Address
+            </span>
+            <span class="txt2" style="color: white">
+              Oral, Kazakhstan
+            </span>
+          </div>
+        </div>
+        <div class="dis-flex size1 p-b-47">
+
+          <div class="flex-col size2">
+            <span class="txt1 p-b-20">
+              Phone Number
+            </span>
+            <span class="txt2" style="color: white">
+              +7 (778) 332 92-13
+            </span>
+          </div>
+        </div>
+        <div class="dis-flex size1 p-b-47">
+          <div class="flex-row size2" style="justify-content: space-between;width: 50%;">
+            <a href="https://www.instagram.com/"  target="_blank" class="icon1"><img src="instwh.png"></a>
+            <a href="https://t.me/" class="icon1" target="_blank"><img src="telwh.png"></a>
+            <a href="https://vk.com/" class="icon1" target="_blank"><img src="vkwh.png"></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>

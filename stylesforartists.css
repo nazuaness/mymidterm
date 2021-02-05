@@ -1,0 +1,128 @@
+/*Just Font types-----------------------------------*/
+@font-face {
+  font-family: Poppins-Regular;
+  src: url('fonts/Poppins-Regular.ttf'); 
+}
+
+@font-face {
+  font-family: Poppins-Medium;
+  src: url('fonts/Poppins-Medium.ttf'); 
+}
+
+@font-face {
+  font-family: Poppins-Bold;
+  src: url('fonts/Poppins-Bold.ttf'); 
+}
+
+@font-face {
+  font-family: Poppins-SemiBold;
+  src: url('fonts/Poppins-SemiBold.ttf'); 
+}
+
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url('fonts/Montserrat-Bold.ttf'); }
+/*Id of DIV where cards located*/
+#body {
+  width: 95vw;
+  height: 90vh;
+  margin-left: 1%;
+  display: flex;
+  flex-direction:  row;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  font-family: Poppins-SemiBold;
+}
+/*When width 1200px*/ 
+@media screen and (max-width: 1200px) {
+  #body{
+    margin-left: 0px;
+    margin-top: -100px;
+  height: 290vh;
+    flex-direction: column;
+  }
+}
+/*Whole card*/
+.card {
+  font-family: Poppins-SemiBold;
+  display: grid;
+  grid-template-columns: 300px;
+  grid-template-rows: 210px 210px ;
+  grid-template-areas: "image" "text" "stats";
+  border-radius: 18px;
+  background: white;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+  font-family: roboto;
+  text-align: center;
+  transition: 0.5s ease;
+  cursor: pointer;
+  margin:30px;
+}
+/*Image part of card*/
+.card-imageKS {
+  /*for KS and Bonah*/
+  background: url("images/KS.png");
+  grid-area: image;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+.card-imagedar {
+  /*For Darrem*/
+  background: url("images/darrem.jpg");
+  grid-area: image;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+
+.card-imagestr {
+
+  /*For Juzz*/
+  background-image: url(images/Darik.jpg);
+  grid-area: image;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+
+.card-imagemul {
+
+  /*For Mulan*/
+  background-image: url(images/Mulan.png);
+  grid-area: image;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+
+.card-imagejel {
+
+  /*For Jeltoksan*/
+  background-image: url(images/jj.jfif);
+  grid-area: image;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+/*Text part of card*/
+.card-text {
+  font-family: Poppins-SemiBold;
+  grid-area: text;
+  margin: 25px;
+}
+.card-text p {
+  color: grey;
+  font-size:15px;
+  font-weight: 300;
+}
+.card-text h2 {
+  margin-top:0px;
+  font-size:28px;
+}
+/*changes when hover*/
+.card:hover {
+  transform: scale(1.15);
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
